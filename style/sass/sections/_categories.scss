@@ -1,0 +1,25 @@
+.categories {
+  padding: 25px 0;
+  border-top: 1px solid #e2e5e9;
+  border-bottom: 1px solid #e2e5e9;
+  background-color: #f3f5f6;
+  @extend %transition-3;
+  @include max-768 {
+    padding-block: 20px;
+  }
+
+  .swiper-slide {
+    width: fit-content;
+  }
+}
+
+.category-item {
+  height: 60px;
+  &.active {
+    border-color: $main-color;
+    color: $main-color;
+  }
+  @include max-768 {
+    height: 40px;
+  }
+}

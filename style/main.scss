@@ -1,0 +1,22 @@
+// Basic
+@import "../style/sass/base/fonts";
+@import "../style/sass/mixins/mixins";
+@import "../style/sass/base/reboot";
+@import "../style/sass/base/base";
+
+// Layout
+@import "../style/sass/layout/header";
+@import "../style/sass/layout/footer";
+
+// Components
+@import "../style/sass/components/store-item";
+@import "../style/sass/components/offer-item";
+@import "../style/sass/components/filters";
+@import "../style/sass/components/sideMenu";
+@import "../style/sass/components/cartMenu";
+
+// Sections
+@import "../style/sass/sections/common";
+@import "../style/sass/sections/categories";
+@import "../style/sass/sections/banners";
+@import "../style/sass/sections/flash-offers";

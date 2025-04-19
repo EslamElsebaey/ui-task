@@ -1,0 +1,206 @@
+.offer-item {
+  .card-img-wrapper {
+    .card-img {
+      height: 187px;
+      object-fit: cover;
+      @include max-768 {
+        height: 100px;
+      }
+    }
+  }
+  .card-body {
+    padding: 0;
+    margin-top: -41px;
+    padding-top: 45px;
+    background-color: #fff;
+    padding-inline-start: 24px;
+    padding-inline-end: 15px;
+    padding-bottom: 18px;
+    border-radius: 9px;
+    @include max-768 {
+      margin-top: -12px;
+      padding-top: 18px;
+      padding-inline-start: 12px;
+      padding-inline-end: 8px;
+      padding-bottom: 10px;
+      border-radius: 5px;
+    }
+  }
+  .card-title {
+    color: $text-color;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 7px;
+    @extend %transition-2;
+    &:hover {
+      color: $main-color;
+    }
+    @include max-768 {
+      font-size: 9px;
+      margin-bottom: 3px;
+    }
+  }
+  .card-text {
+    font-size: 15px;
+    margin-bottom: 9px;
+    max-width: 291px;
+    height: 45px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    @include max-768 {
+      font-size: 8px;
+      margin-bottom: 4px;
+      max-width: 140px;
+      height: 25px;
+    }
+  }
+  .current-price {
+    min-width: 62px;
+    height: 30px;
+    border-radius: 100px;
+    @extend %flex-center;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15.24px;
+    background-color: $main-color;
+    @include max-768 {
+      min-width: 35px;
+      font-size: 8px;
+      height: 15px;
+    }
+  }
+  .old-price {
+    color: #98a1ae;
+    font-weight: 400;
+    font-size: 15.24px;
+    text-decoration: line-through;
+    @include max-768 {
+      font-size: 8px;
+    }
+  }
+  .discount-time-wrapper {
+    position: absolute;
+    top: 13px;
+    inset-inline-start: 8px;
+    z-index: 1;
+    gap: 12px;
+    @include max-768 {
+      top: 10px;
+      inset-inline-start: 7px;
+    }
+  }
+  .discount {
+    min-width: 50px;
+    padding-inline: 9px;
+    font-size: 13px;
+    background-color: #ff8a59;
+    border-radius: 52px;
+    font-weight: 400;
+    color: #fff;
+    height: 28px;
+    @extend %flex-center;
+    @include max-768 {
+      min-width: 24px;
+      height: 13px;
+      font-size: 6.25px;
+    }
+  }
+  .time-remained {
+    height: 29px;
+    min-width: 100px;
+    background-color: #fff;
+    border-radius: 100px;
+    gap: 6px;
+    @extend %flex-center;
+    .timer-container {
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+      font-size: 14px;
+      color: $text-color;
+      .timer-display {
+        display: flex;
+        min-width: 55px;
+        align-items: center;
+        @include max-768 {
+          min-width: 28px;
+        }
+      }
+    }
+    @include max-768 {
+      height: 15px;
+      min-width: 48px;
+      gap: 3px;
+      .timer-container {
+        span {
+          font-size: 7px;
+        }
+      }
+    }
+    .circle {
+      display: flex;
+      align-items: center;
+      img {
+        width: 18px;
+        @include max-768 {
+          width: 8px;
+        }
+      }
+    }
+  }
+  .badge {
+    background-color: #232323;
+    @extend %flex-center;
+    min-width: 100px;
+    height: 25px;
+    border-radius: 100px;
+    gap: 7px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    position: absolute;
+    top: 113px;
+    inset-inline-end: 11px;
+    z-index: 1;
+    @include max-768 {
+      font-size: 6px;
+      height: 12px;
+      min-width: 48px;
+      border-radius: 50px;
+      top: 70px;
+      inset-inline-end: 6px;
+    }
+    img {
+      width: 12px;
+      @include max-768 {
+        width: 6px;
+      }
+    }
+  }
+  .brand-img-wrapper {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 4.36px solid #ffffff;
+    position: absolute;
+    top: 107px;
+    inset-inline-start: 24px;
+    z-index: 1;
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+      border-radius: 50%;
+    }
+    @include max-768 {
+      top: 70px;
+      width: 36px;
+      height: 36px;
+      border: 2.08px solid #ffffff;
+      inset-inline-start: 11px;
+    }
+  }
+}

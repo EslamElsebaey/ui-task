@@ -1,0 +1,122 @@
+.footer {
+  background-color: #032a37;
+}
+.footer-content {
+  max-width: 980px;
+  margin-inline: auto;
+}
+.main-links {
+  padding-top: 30px;
+  padding-bottom: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline-end: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+  @include max-768 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding-inline-end: 0;
+    padding-bottom: 25px;
+  }
+  .link {
+    color: #fff;
+    font-weight: 300;
+    font-size: 13px;
+    @extend %transition-2;
+    &:hover {
+      color: $main-color;
+    }
+  }
+  .link.footer-lang {
+    font-weight: 300;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    img {
+      width: 18px;
+    }
+  }
+}
+
+.footer-items {
+  padding-block: 24px;
+  border-bottom: 1px solid #ffffff33;
+  border-top: 1px solid #ffffff33;
+}
+
+.footer-item {
+  .footer-item-title {
+    color: #999999;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  .footer-log {
+    width: 125.66px;
+    margin-bottom: 35px;
+  }
+}
+
+.footer-links-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  li {
+    display: flex;
+  }
+  .footer-link {
+    color: #fff;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 1.5;
+    @extend %transition-2;
+    &:hover {
+      color: $main-color;
+    }
+    &.more {
+      margin-top: 10px;
+      @include max-768 {
+        margin-top: 6px;
+      }
+    }
+  }
+}
+
+.copyright {
+  padding-top: 24px;
+  padding-bottom: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include max-768 {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+  .text {
+    color: #ffffffcc;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .social {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    @include max-768 {
+      gap: 15px;
+    }
+    .icon {
+      color: #ffffffcc;
+      font-size: 22px;
+      @include max-768 {
+        font-size: 20px;
+      }
+    }
+  }
+}

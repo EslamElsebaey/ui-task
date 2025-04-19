@@ -1,0 +1,85 @@
+.flash-offers {
+  @include max-768 {
+    background-color: #f3f5f6;
+    border-radius: 7px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+  }
+  .flash-offers-content {
+    background-color: #f3f5f6;
+    padding-top: 40px;
+    padding-bottom: 120px;
+    padding-inline: 32px;
+    border-radius: 13px;
+    position: relative;
+    z-index: 2;
+    @include max-768 {
+      padding-top: 20px;
+      padding-bottom: 56px;
+      padding-inline: 0;
+      border-radius: 7px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../images/flashed-offers/bg.png);
+      background-position: center;
+      background-size: cover;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+      z-index: -1;
+      width: 623px;
+      height: 561px;
+      @include max-768 {
+        width: 298px;
+        height: 268px;
+      }
+    }
+    .orang-flash {
+      inset-inline-end: 60px;
+      bottom: 27px;
+      position: absolute;
+      z-index: 1;
+      width: 38.7px;
+      @include max-768 {
+        display: none;
+      }
+    }
+    .blue-flash {
+      inset-inline-start: 30px;
+      bottom: 30px;
+      position: absolute;
+      z-index: 1;
+      width: 63.58px;
+      @include max-768 {
+        width: 31px;
+        bottom: 14px;
+        inset-inline-start: 37px;
+      }
+    }
+  }
+  .swiper-btns {
+    margin-inline-start: auto;
+  }
+  .general-title {
+    display: flex;
+    align-items: center;
+    &::before {
+      content: "";
+      background-image: url(../images/flashed-offers/shapes/voltage.png);
+      width: 51px;
+      height: 51px;
+      background-size: cover;
+      margin-inline-end: 8px;
+      @include max-768 {
+        width: 24px;
+        height: 24px;
+        margin-inline-end: 4px;
+      }
+    }
+  }
+}

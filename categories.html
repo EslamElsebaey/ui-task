@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="icon" href="images/mobile-logo.png" type="image/webp" />
+    <link rel="stylesheet" href="lib/swiperjs/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="lib/fontawesome/all.min.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/nouislider@15.7.0/dist/nouislider.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css" />
+    <title>Categories</title>
+</head>
+
+<body class="cats-body">
+    <!-- Start Preloader -->
+    <div class="preloader-container">
+        <div class="preloader"></div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- Start SideMenu -->
+    <aside class="sideMenu">
+        <div class="overlay"></div>
+        <div class="sideNav">
+            <div class="mob-upper">
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <button class="closeSideMenuBtn">
+                    <i class="fa-regular fa-xmark"></i>
+                </button>
+            </div>
+            <div class="profile">
+                <div class="avatar">
+                    <img src="images/sideMenu/Avatars.png" class="img" alt="">
+                </div>
+                <div class="text-content">
+                    <span class="welcome">Welcome !</span>
+                    <h3 class="name">Mohaned Tarek</h3>
+                </div>
+            </div>
+            <ul class="sideNav-list">
+                <li>
+                    <a href="#">
+                        <img src="images/sideMenu/icons/orders.svg" alt="">
+                        Orders
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/sideMenu/icons/favourites.svg" alt="">
+                        Favorites
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/sideMenu/icons/address.svg" alt="">
+                        Saved Address
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/sideMenu/icons/promotions.svg" alt="">
+                        Promotions
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/sideMenu/icons/account.svg" alt="">
+                        Account Settings
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/sideMenu/icons/signout.svg" alt="">
+                        Sign Out
+                    </a>
+                </li>
+            </ul>
+            <div class="other-list">
+                <li>
+                    <a href="#">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Add your restaurant
+                    </a>
+                </li>
+            </div>
+            <div class="discover">
+                <img src="images/mobile-logo.png" alt="">
+                <span class="text">
+                    Discover the new Eatme app
+                    Download Now
+                </span>
+            </div>
+            <div class="playstores">
+                <a href="#">
+                    <img src="images/playstores/google.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="images/playstores/apple.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="images/playstores/huawei.png" alt="">
+                </a>
+            </div>
+        </div>
+    </aside>
+    <!-- End SideMenu -->
+
+
+    <!-- Start Cart Menu -->
+    <div class="cartMenu">
+        <div class="overlay"></div>
+        <div class="cartMenuBox">
+            <button class="closeCartBtn">
+                <i class="fa-regular fa-xmark"></i>
+            </button>
+            <div class="store-info">
+                <span class="store-text">
+                    Your cart from
+                </span>
+                <a href="#" class="store-name">
+                    McDonald's
+                </a>
+                <div class="items-ordered">
+                    <span class="count">
+                        <span class="num">3</span> item
+                    </span>
+                    <span class="subtotal">
+                        Subtotal : <span class="num">10.00 KD</span>
+                    </span>
+                </div>
+            </div>
+            <div class="order">
+                <div class="upper-portion">
+                    <div class="order-details">
+                        <p class="order-name">
+                            Quarter Pounder with Cheese...
+                        </p>
+                        <span class="order-desc">
+                            Medium, French Fries, Coke
+                        </span>
+                    </div>
+                    <div class="order-img">
+                        <img src="images/cart/1.png" alt="">
+                    </div>
+                </div>
+                <div class="lower-portion">
+                    <div class="order-counter">
+                        <button class="increment">
+                            <i class="fa-regular fa-plus"></i>
+                        </button>
+                        <span class="num">
+                            <span class="value">1</span>
+                            <span>×</span>
+                        </span>
+                        <button class="delete">
+                            <i class="fa-regular fa-trash"></i>
+                        </button>
+                    </div>
+                    <span class="price">
+                        8.00 KD
+                    </span>
+                </div>
+            </div>
+            <div class="order">
+                <div class="upper-portion">
+                    <div class="order-details">
+                        <p class="order-name">
+                            French Fries
+                        </p>
+                        <span class="order-desc">
+                            Medium
+                        </span>
+                        <span class="order-hint">
+                            "Please do not add ketchup or any other..”
+                        </span>
+                    </div>
+                    <div class="order-img">
+                        <img src="images/cart/2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="lower-portion">
+                    <div class="order-counter">
+                        <button class="increment">
+                            <i class="fa-regular fa-plus"></i>
+                        </button>
+                        <span class="num">
+                            <span class="value">2</span>
+                            <span>×</span>
+                        </span>
+                        <button class="decrement">
+                            <i class="fa-regular fa-minus"></i>
+                        </button>
+                    </div>
+                    <span class="price">
+                        4.00 KD
+                    </span>
+                </div>
+            </div>
+            <div class="order-summary">
+                <div class="summary-item">
+                    <span>Subtotal</span>
+                    <span>10.00 KD</span>
+                </div>
+                <div class="summary-item">
+                    <span>Delivery Fee</span>
+                    <span>4.00 KD</span>
+                </div>
+                <div class="summary-item">
+                    <span>Fees & Estimated Tax</span>
+                    <span>5.00 KD</span>
+                </div>
+                <div class="total">
+                    <span>
+                        Total
+                    </span>
+                    <span>
+                        19.00 KD
+                    </span>
+                </div>
+            </div>
+            <button class="checkoutBtn">
+                Checkout
+                <span class="total-price">
+                    19.00 KD
+                </span>
+            </button>
+        </div>
+
+    </div>
+    <!-- End Cart Menu -->
+
+
+    <!-- Start Upper Wrapper -->
+    <div class="upper-wrapper">
+        <!-- Start Header -->
+        <header class="header home-header">
+            <div class="container">
+                <div class="header-content">
+                    <a href="#" class="mob-logo">
+                        <img src="images/mobile-logo.png" alt="">
+                    </a>
+                    <button class="sideMenuBtn">
+                        <i class="fa-sharp fa-solid fa-bars icon"></i>
+                    </button>
+
+                    <div class="logo-sideMenuBtn-holder">
+                        <button class="sideMenuBtn">
+                            <i class="fa-sharp fa-solid fa-bars icon"></i>
+                        </button>
+                        <a href="#" class="logo">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="delivery-options">
+                        <div class="delivery-pick">
+                            <button class="delivery-btn active">
+                                Delivery
+                            </button>
+                            <button class="pick-btn">
+                                Pickup
+                            </button>
+                        </div>
+                        <button class="destination">
+                            <img src="images/icons/export.svg" alt="">
+                            Kuwait City
+                        </button>
+                    </div>
+                    <form class="search-form">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Food, drinks or Stores"
+                                aria-label="Search">
+                            <button type="button" class="search-btn">
+                                <img src="images/icons/search.svg" alt="">
+                            </button>
+                        </div>
+                    </form>
+                    <div class="user-controls">
+                        <button class="index-cart-btn">
+                            <img src="images/icons/cart-white.svg" alt="">
+                            Cart • <span class="num">0</span>
+                        </button>
+                        <a href="#" class="signup-btn">
+                            Sign up
+                        </a>
+                        <a href="#" class="login-btn">
+                            Log in
+                        </a>
+                    </div>
+                    <div class="mobile-controls">
+                        <button class="cart-btn">
+                            <img src="images/icons/cart.svg" alt="">
+                        </button>
+                        <button class="notification-btn">
+                            <img src="images/icons/bell.svg" alt="">
+                        </button>
+                    </div>
+                    <a href="#" class="lang">
+                        العربية
+                        <img src="images/lang-ar.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-- End Header -->
+        <!-- Start Categories -->
+        <section class="categories">
+            <div class="container">
+                <div class="swiper-parent">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="categories.html" class="category-item custom-btn bg-white px-2 px-sm-3">
+                                    <img src="images/categories/1.png" alt="">
+                                    Breakfast
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="categories.html" class="category-item custom-btn bg-white px-2 px-sm-3">
+                                    <img src="images/categories/2.png" alt="">
+                                    Burger
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="category-item custom-btn bg-white px-2 px-sm-3 active">
+                                    <img src="images/categories/3.png" alt="">
+                                    Pizza
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="categories.html" class="category-item custom-btn bg-white px-2 px-sm-3">
+                                    <img src="images/categories/4.png" alt="">
+                                    Asian
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="categories.html" class="category-item custom-btn bg-white px-2 px-sm-3">
+                                    <img src="images/categories/5.png" alt="">
+                                    American
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="categories.html" class="category-item custom-btn bg-white px-2 px-sm-3">
+                                    <img src="images/categories/6.png" alt="">
+                                    Healthy
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="categories.html" class="category-item custom-btn bg-white px-2 px-sm-3">
+                                    <img src="images/categories/7.png" alt="">
+                                    Coffe
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="categories.html" class="category-item custom-btn bg-white px-2 px-sm-3">
+                                    <img src="images/categories/8.png" alt="">
+                                    Fast food
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="categories.html" class="category-item custom-btn bg-white px-2 px-sm-3">
+                                    <img src="images/categories/1.png" alt="">
+                                    Breakfast
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next bg-white">
+                        <i class="fa-regular fa-chevron-right icon"></i>
+                    </div>
+                    <div class="swiper-button-prev bg-white">
+                        <i class="fa-regular fa-chevron-left icon"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Categories -->
+
+        <!-- Start Special Offers -->
+        <section class="special-offers">
+            <div class="container">
+                <div class="offers-wrapper">
+                    <a href="#" class="custom-btn bg-grey px-2 px-sm-3">
+                        <img src="images/special-offers/1.png" alt="">
+                        Flash Offers
+                    </a>
+                    <a href="#" class="custom-btn bg-grey px-2 px-sm-3">
+                        <img src="images/special-offers/2.png" alt="">
+                        Free Delivery
+                    </a>
+                    <a href="#" class="custom-btn bg-grey px-2 px-sm-3">
+                        <img src="images/special-offers/3.png" alt="">
+                        Buy one Get one
+                    </a>
+                    <a href="#" class="custom-btn bg-grey px-2 px-sm-3">
+                        <img src="images/special-offers/4.png" alt="">
+                        50% off
+                    </a>
+                    <a href="#" class="custom-btn bg-grey px-2 px-sm-3">
+                        <img src="images/special-offers/5.png" alt="">
+                        Near You
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- End Special Offers -->
+
+
+        <!-- Start Filters -->
+        <section class="filters">
+            <div class="container">
+                <div class="swiper-parent">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="filter-wrapper">
+                                    <button class="filter-btn">
+                                        Sort by : Recommended
+                                    </button>
+                                    <div class="filter-box">
+                                        <button class="closeBoxBtn">
+                                            <i class="fa-regular fa-xmark"></i>
+                                        </button>
+                                        <h3 class="title">Sort by</h3>
+                                        <ul class="options-list">
+                                            <li>
+                                                <label class="radio-item">
+                                                    <input type="radio" name="sort" checked>
+                                                    <span class="checkmark"></span>
+                                                    Recommended
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="radio-item">
+                                                    <input type="radio" name="sort">
+                                                    <span class="checkmark"></span>
+                                                    Store Rate
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="radio-item">
+                                                    <input type="radio" name="sort">
+                                                    <span class="checkmark"></span>
+                                                    Order Time
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="radio-item">
+                                                    <input type="radio" name="sort">
+                                                    <span class="checkmark"></span>
+                                                    Delivery Fees
+                                                </label>
+                                            </li>
+                                        </ul>
+                                        <div class="actions">
+                                            <button class="apply-btn">Apply</button>
+                                            <button class="reset-btn">Reset</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filter-wrapper">
+                                    <button class="filter-btn">
+                                        <img src="images/icons/tag.svg" alt="">
+                                        Discount Range
+                                    </button>
+                                    <div class="filter-box discountFilterBox">
+                                        <button class="closeBoxBtn">
+                                            <i class="fa-regular fa-xmark"></i>
+                                        </button>
+                                        <h3 class="title">Discount Range</h3>
+                                        <p class="selected-value">Over 25%</p>
+                                        <div class="slider" id="discountSlider"></div>
+                                        <div class="step-labels">
+                                            <span>15%</span>
+                                            <span>25%</span>
+                                            <span>50%</span>
+                                            <span>70%</span>
+                                            <span>90%</span>
+                                        </div>
+                                        <div class="actions">
+                                            <button class="apply-btn">Apply</button>
+                                            <button class="reset-btn">Reset</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filter-wrapper">
+                                    <button class="filter-btn">
+                                        <img src="images/icons/star.svg" alt="">
+                                        Rate
+                                    </button>
+                                    <div class="filter-box rateFilterBox">
+                                        <button class="closeBoxBtn">
+                                            <i class="fa-regular fa-xmark"></i>
+                                        </button>
+                                        <h3 class="title">Rate</h3>
+                                        <p class="selected-value">Over 3.5</p>
+                                        <div class="slider" id="rateSlider"></div>
+                                        <div class="step-labels">
+                                            <span>+3</span>
+                                            <span>+3.5</span>
+                                            <span>+4</span>
+                                            <span>+4.5</span>
+                                            <span>5</span>
+                                        </div>
+                                        <div class="actions">
+                                            <button class="apply-btn">Apply</button>
+                                            <button class="reset-btn">Reset</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filter-wrapper">
+                                    <button class="filter-btn feesFilterBtn">
+                                        <img src="images/icons/bicycle.svg" alt="">
+                                        Max delivery fees
+                                    </button>
+                                    <div class="filter-box feesFilterBox">
+                                        <button class="closeBoxBtn">
+                                            <i class="fa-regular fa-xmark"></i>
+                                        </button>
+                                        <h3 class="title">Max delivery fees</h3>
+                                        <p class="selected-value">Under 1 KD</p>
+                                        <div class="slider" id="feesSlider"></div>
+                                        <div class="step-labels">
+                                            <span>0.5</span>
+                                            <span>1</span>
+                                            <span>1.5</span>
+                                            <span>2</span>
+                                            <span>3</span>
+                                        </div>
+                                        <div class="actions">
+                                            <button class="apply-btn">Apply</button>
+                                            <button class="reset-btn">Reset</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Filters -->
+    </div>
+
+    <!-- End Upper Wrapper -->
+
+
+
+
+
+
+    <!-- Start Banners -->
+    <section class="banners">
+        <div class="container">
+            <div class="swiper-parent">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="banner-item" style="background-image: url(images/banners/bg-1.jpg);">
+                                <div class="item-details">
+                                    <h3 class="banner-title" style="color: #fff;">
+                                        Enjoy 10KD off orders up to 20KD from selected stores
+                                    </h3>
+                                    <p class="banner-text" style="color: #fff;">
+                                        Use code: OFF10
+                                    </p>
+                                    <a href="#" class="banner-btn">
+                                        Shop Now
+                                    </a>
+                                </div>
+                                <img src="images/banners/img-1.jfif" alt="" class="banner-img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner-item" style="background-image: url(images/banners/bg-2.jpg);">
+                                <div class="item-details">
+                                    <h3 class="banner-title" style="color: #0E1114;">
+                                        Free Delivery orders 20KD
+                                        for selected stores
+                                    </h3>
+                                    <p class="banner-text" style="color: #0E1114;">
+                                        Use code: FREEDELIVERY
+                                    </p>
+                                    <a href="#" class="banner-btn">
+                                        Order Now
+                                    </a>
+                                </div>
+                                <img src="images/banners/img-2.png" alt="" class="banner-img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner-item" style="background-image: url(images/banners/bg-3.jpg);">
+                                <div class="item-details">
+                                    <h3 class="banner-title" style="color: #fff;">
+                                        Save 25% or more on Happy
+                                        hour stores :)
+                                    </h3>
+                                    <p class="banner-text" style="color: #fff;">
+                                        Every day 5-11 PM
+                                    </p>
+                                    <a href="#" class="banner-btn">
+                                        Browse Now
+                                    </a>
+                                </div>
+                                <img src="images/banners/img-3.jfif" alt="" class="banner-img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner-item" style="background-image: url(images/banners/bg-1.jpg);">
+                                <div class="item-details">
+                                    <h3 class="banner-title" style="color: #fff;">
+                                        Enjoy 10KD off orders up to 20KD from selected stores
+                                    </h3>
+                                    <p class="banner-text" style="color: #fff;">
+                                        Use code: OFF10
+                                    </p>
+                                    <a href="#" class="banner-btn">
+                                        Shop Now
+                                    </a>
+                                </div>
+                                <img src="images/banners/img-1.jfif" alt="" class="banner-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next bg-white">
+                    <i class="fa-regular fa-chevron-right icon"></i>
+                </div>
+                <div class="swiper-button-prev bg-white">
+                    <i class="fa-regular fa-chevron-left icon"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banners -->
+
+    <!-- Start Top Pizza Offers -->
+    <section class="topPizzaOffers custom-swiper">
+        <div class="container">
+            <div class="d-flex align-items-center mb-sm-4 mb-3">
+                <h2 class="general-title">
+                    Top Pizza Offers
+                </h2>
+                <a href="#" class="seeAll-link ms-auto me-0 me-sm-4">
+                    See all
+                </a>
+                <div class="swiper-btns d-sm-flex d-none align-items-center gap-2">
+                    <div class="swiper-button-prev bg-grey">
+                        <i class="fa-regular fa-chevron-left icon"></i>
+                    </div>
+                    <div class="swiper-button-next bg-grey">
+                        <i class="fa-regular fa-chevron-right icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-parent">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card border-0 offer-item">
+                                <a href="#" class="card-img-wrapper rounded-3">
+                                    <img src="images/pizza-offers/offer-imgs/1.png" alt="" class="card-img rounded-3">
+                                </a>
+                                <div class="card-body">
+                                    <button class="favourite-btn">
+                                        <img src="images/icons/heart.svg" alt="">
+                                    </button>
+                                    <span class="badge">
+                                        Free Delivery
+                                    </span>
+                                    <div class="discount-time-wrapper d-flex align-items-center">
+                                        <span class="discount">
+                                            50%
+                                        </span>
+                                    </div>
+                                    <div class="brand-img-wrapper">
+                                        <img src="images/pizza-offers/brand-imgs/1.png" alt="">
+                                    </div>
+                                    <a href="#" class="card-title">
+                                        Pizza Hut
+                                    </a>
+                                    <span class="card-text fw-light text-secondary d-block">
+                                        Enjoy 50% off & free delivery on margita pizza from Pizza hut
+                                    </span>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="current-price">
+                                            10KD
+                                        </span>
+                                        <span class="old-price">
+                                            40KD
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border-0 offer-item">
+                                <a href="#" class="card-img-wrapper rounded-3">
+                                    <img src="images/pizza-offers/offer-imgs/2.png" alt="" class="card-img rounded-3">
+                                </a>
+                                <div class="card-body">
+                                    <button class="favourite-btn">
+                                        <img src="images/icons/heart.svg" alt="">
+                                    </button>
+                                    <span class="badge">
+                                        <img src="images/icons/flash.svg" alt="">
+                                        Flash Offer
+                                    </span>
+                                    <div class="discount-time-wrapper d-flex align-items-center">
+                                        <span class="discount">
+                                            50%
+                                        </span>
+                                    </div>
+                                    <div class="brand-img-wrapper">
+                                        <img src="images/pizza-offers/brand-imgs/2.png" alt="">
+                                    </div>
+                                    <a href="#" class="card-title">
+                                        Papa Jones
+                                    </a>
+                                    <span class="card-text fw-light text-secondary d-block">
+                                        25% off on Double The Thin And Crunchy Offer.
+                                    </span>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="current-price">
+                                            10KD
+                                        </span>
+                                        <span class="old-price">
+                                            40KD
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border-0 offer-item">
+                                <a href="#" class="card-img-wrapper rounded-3">
+                                    <img src="images/pizza-offers/offer-imgs/3.png" alt="" class="card-img rounded-3">
+                                </a>
+                                <div class="card-body">
+                                    <button class="favourite-btn">
+                                        <img src="images/icons/heart.svg" alt="">
+                                    </button>
+                                    <span class="badge">
+                                        <img src="images/icons/flash.svg" alt="">
+                                        Flash Offer
+                                    </span>
+                                    <div class="discount-time-wrapper d-flex align-items-center">
+                                        <span class="discount">
+                                            70%
+                                        </span>
+                                    </div>
+                                    <div class="brand-img-wrapper">
+                                        <img src="images/pizza-offers/brand-imgs/3.jpg" alt="">
+                                    </div>
+                                    <a href="#" class="card-title">
+                                        Domino's Pizza
+                                    </a>
+                                    <span class="card-text fw-light text-secondary d-block">
+                                        Grilled chicken pieces, onion, mozzarella, American cheese, orega...
+                                    </span>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="current-price">
+                                            10KD
+                                        </span>
+                                        <span class="old-price">
+                                            40KD
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border-0 offer-item">
+                                <a href="#" class="card-img-wrapper rounded-3">
+                                    <img src="images/pizza-offers/offer-imgs/4.png" alt="" class="card-img rounded-3">
+                                </a>
+                                <div class="card-body">
+                                    <button class="favourite-btn">
+                                        <img src="images/icons/heart.svg" alt="">
+                                    </button>
+                                    <span class="badge">
+                                        Buy one Get one
+                                    </span>
+                                    <div class="discount-time-wrapper d-flex align-items-center">
+                                        <span class="discount">
+                                            40%
+                                        </span>
+                                    </div>
+                                    <div class="brand-img-wrapper">
+                                        <img src="images/pizza-offers/brand-imgs/3.jpg" alt="">
+                                    </div>
+                                    <a href="#" class="card-title">
+                                        Pizza King
+                                    </a>
+                                    <span class="card-text fw-light text-secondary d-block">
+                                        Large pizza stuffed with cheesy bites, medium pizza, liter coca cola,
+                                        coleslaw...
+                                    </span>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="current-price">
+                                            10KD
+                                        </span>
+                                        <span class="old-price">
+                                            40KD
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border-0 offer-item">
+                                <a href="#" class="card-img-wrapper rounded-3">
+                                    <img src="images/pizza-offers/offer-imgs/1.png" alt="" class="card-img rounded-3">
+                                </a>
+                                <div class="card-body">
+                                    <button class="favourite-btn">
+                                        <img src="images/icons/heart.svg" alt="">
+                                    </button>
+                                    <span class="badge">
+                                        Free Delivery
+                                    </span>
+                                    <div class="discount-time-wrapper d-flex align-items-center">
+                                        <span class="discount">
+                                            50%
+                                        </span>
+                                    </div>
+                                    <div class="brand-img-wrapper">
+                                        <img src="images/pizza-offers/brand-imgs/1.png" alt="">
+                                    </div>
+                                    <a href="#" class="card-title">
+                                        Pizza Hut
+                                    </a>
+                                    <span class="card-text fw-light text-secondary d-block">
+                                        Enjoy 50% off & free delivery on margita pizza from Pizza hut
+                                    </span>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="current-price">
+                                            10KD
+                                        </span>
+                                        <span class="old-price">
+                                            40KD
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Top Pizza Offers -->
+
+
+    <!-- Start Pizza Stores -->
+    <section class="pizza-stores">
+        <div class="container">
+            <div class="d-flex align-items-center mb-sm-4 mb-3">
+                <h2 class="general-title">
+                    Pizza Stores
+                </h2>
+            </div>
+            <div class="pizzaStores-wrapper">
+                <div class="row gy-4">
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="card border-0 store-item">
+                            <a href="#" class="card-img-wrapper rounded-3">
+                                <img src="images/featured-stores/1.jpg" alt="" class="card-img rounded-3">
+                            </a>
+                            <div class="card-body">
+                                <span class="status text-white open px-2">
+                                    Open Now
+                                </span>
+                                <button class="favourite-btn active">
+                                    <img src="images/icons/heart.svg" alt="">
+                                </button>
+                                <div class="d-flex align-items-center gap-2 ">
+                                    <a href="#" class="card-title">
+                                        L&L Hawaiian Barbecue
+                                    </a>
+                                    <span class="rate d-flex align-items-center gap-1">
+                                        <img src="images/icons/rate.svg" alt="">
+                                        4.7
+                                    </span>
+                                </div>
+                                <span class="card-text fw-light text-secondary d-block">
+                                    Hawaiian, Burgers
+                                </span>
+                                <div class="d-flex align-items-center gap-1">
+                                    <span class="time d-flex align-items-center gap-1 fw-light text-secondary">
+                                        <img src="images/icons/clock.svg" alt="">
+                                        Withthin 33 Min •
+                                    </span>
+                                    <span class="price d-flex align-items-center gap-1 fw-light text-secondary">
+                                        <img src="images/icons/motorbike.svg" alt="">
+                                        0.95 KWD
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="card border-0 store-item">
+                            <a href="#" class="card-img-wrapper rounded-3">
+                                <img src="images/featured-stores/2.jpg" alt="" class="card-img rounded-3">
+                            </a>
+                            <div class="card-body">
+                                <span class="status text-white closed px-2">
+                                    closes now
+                                </span>
+                                <button class="favourite-btn">
+                                    <img src="images/icons/heart.svg" alt="">
+                                </button>
+                                <div class="d-flex align-items-center gap-2 ">
+                                    <a href="#" class="card-title">
+                                        Shake Shack
+                                    </a>
+                                    <span class="rate d-flex align-items-center gap-1">
+                                        <img src="images/icons/rate.svg" alt="">
+                                        4.5
+                                    </span>
+                                </div>
+                                <span class="card-text  fw-light text-secondary d-block">
+                                    Chicken Tenders, Fries,Salads
+                                </span>
+                                <div class="d-flex align-items-center gap-1">
+                                    <span class="time d-flex align-items-center gap-1 fw-light text-secondary">
+                                        <img src="images/icons/clock.svg" alt="">
+                                        Withthin 24 Min •
+                                    </span>
+                                    <span class="price d-flex align-items-center gap-1 fw-light text-secondary">
+                                        <img src="images/icons/motorbike.svg" alt="">
+                                        0.95 KWD
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="card border-0 store-item">
+                            <a href="#" class="card-img-wrapper rounded-3">
+                                <img src="images/featured-stores/3.jpg" alt="" class="card-img rounded-3">
+                            </a>
+                            <div class="card-body">
+                                <span class="status text-white notAvailable px-2">
+                                    Not Available
+                                </span>
+                                <button class="favourite-btn active">
+                                    <img src="images/icons/heart.svg" alt="">
+                                </button>
+                                <div class="d-flex align-items-center gap-2 ">
+                                    <a href="#" class="card-title">
+                                        Starbird Chicken
+                                    </a>
+                                    <span class="rate d-flex align-items-center gap-1">
+                                        <img src="images/icons/rate.svg" alt="">
+                                        4.3
+                                    </span>
+                                </div>
+                                <span class="card-text  fw-light text-secondary d-block">
+                                    Chicken, Fried Chicken
+                                </span>
+                                <div class="d-flex align-items-center gap-1">
+                                    <span class="time d-flex align-items-center gap-1 fw-light text-secondary">
+                                        <img src="images/icons/clock.svg" alt="">
+                                        Withthin 33 Min •
+                                    </span>
+                                    <span class="price d-flex align-items-center gap-1 fw-light text-secondary">
+                                        <img src="images/icons/motorbike.svg" alt="">
+                                        0.95 KWD
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="card border-0 store-item">
+                            <a href="#" class="card-img-wrapper rounded-3">
+                                <img src="images/featured-stores/4.jpg" alt="" class="card-img rounded-3">
+                            </a>
+                            <div class="card-body">
+                                <span class="status text-white open px-2">
+                                    Open Now
+                                </span>
+                                <button class="favourite-btn">
+                                    <img src="images/icons/heart.svg" alt="">
+                                </button>
+                                <div class="d-flex align-items-center gap-2 ">
+                                    <a href="#" class="card-title">
+                                        The Melt
+                                    </a>
+                                    <span class="rate d-flex align-items-center gap-1">
+                                        <img src="images/icons/rate.svg" alt="">
+                                        4.5
+                                    </span>
+                                </div>
+                                <span class="card-text  fw-light text-secondary d-block">
+                                    Melts, Sandwiches
+                                </span>
+                                <div class="d-flex align-items-center gap-1">
+                                    <span class="time d-flex align-items-center gap-1 fw-light text-secondary">
+                                        <img src="images/icons/clock.svg" alt="">
+                                        Withthin 20 Min •
+                                    </span>
+                                    <span class="price d-flex align-items-center gap-1 fw-light text-secondary">
+                                        <img src="images/icons/motorbike.svg" alt="">
+                                        0.95 KWD
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="card border-0 store-item">
+                            <a href="#" class="card-img-wrapper rounded-3">
+                                <img src="images/featured-stores/1.jpg" alt="" class="card-img rounded-3">
+                            </a>
+                            <div class="card-body">
+                                <span class="status text-white open px-2">
+                                    Open Now
+                                </span>
+                                <button class="favourite-btn active">
+                                    <img src="images/icons/heart.svg" alt="">
+                                </button>
+                                <div class="d-flex align-items-center gap-2 ">
+                                    <a href="#" class="card-title">
+                                        L&L Hawaiian Barbecue
+                                    </a>
+                                    <span class="rate d-flex align-items-center gap-1">
+                                        <img src="images/icons/rate.svg" alt="">
+                                        4.7
+                                    </span>
+                                </div>
+                                <span class="card-text fw-light text-secondary d-block">
+                                    Hawaiian, Burgers
+                                </span>
+                                <div class="d-flex align-items-center gap-1">
+                                    <span class="time d-flex align-items-center gap-1 fw-light text-secondary">
+                                        <img src="images/icons/clock.svg" alt="">
+                                        Withthin 33 Min •
+                                    </span>
+                                    <span class="price d-flex align-items-center gap-1 fw-light text-secondary">
+                                        <img src="images/icons/motorbike.svg" alt="">
+                                        0.95 KWD
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="card border-0 store-item">
+                            <a href="#" class="card-img-wrapper rounded-3">
+                                <img src="images/featured-stores/2.jpg" alt="" class="card-img rounded-3">
+                            </a>
+                            <div class="card-body">
+                                <span class="status text-white closed px-2">
+                                    closes now
+                                </span>
+                                <button class="favourite-btn">
+                                    <img src="images/icons/heart.svg" alt="">
+                                </button>
+                                <div class="d-flex align-items-center gap-2 ">
+                                    <a href="#" class="card-title">
+                                        Shake Shack
+                                    </a>
+                                    <span class="rate d-flex align-items-center gap-1">
+                                        <img src="images/icons/rate.svg" alt="">
+                                        4.5
+                                    </span>
+                                </div>
+                                <span class="card-text  fw-light text-secondary d-block">
+                                    Chicken Tenders, Fries,Salads
+                                </span>
+                                <div class="d-flex align-items-center gap-1">
+                                    <span class="time d-flex align-items-center gap-1 fw-light text-secondary">
+                                        <img src="images/icons/clock.svg" alt="">
+                                        Withthin 24 Min •
+                                    </span>
+                                    <span class="price d-flex align-items-center gap-1 fw-light text-secondary">
+                                        <img src="images/icons/motorbike.svg" alt="">
+                                        0.95 KWD
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="card border-0 store-item">
+                            <a href="#" class="card-img-wrapper rounded-3">
+                                <img src="images/featured-stores/3.jpg" alt="" class="card-img rounded-3">
+                            </a>
+                            <div class="card-body">
+                                <span class="status text-white notAvailable px-2">
+                                    Not Available
+                                </span>
+                                <button class="favourite-btn active">
+                                    <img src="images/icons/heart.svg" alt="">
+                                </button>
+                                <div class="d-flex align-items-center gap-2 ">
+                                    <a href="#" class="card-title">
+                                        Starbird Chicken
+                                    </a>
+                                    <span class="rate d-flex align-items-center gap-1">
+                                        <img src="images/icons/rate.svg" alt="">
+                                        4.3
+                                    </span>
+                                </div>
+                                <span class="card-text  fw-light text-secondary d-block">
+                                    Chicken, Fried Chicken
+                                </span>
+                                <div class="d-flex align-items-center gap-1">
+                                    <span class="time d-flex align-items-center gap-1 fw-light text-secondary">
+                                        <img src="images/icons/clock.svg" alt="">
+                                        Withthin 33 Min •
+                                    </span>
+                                    <span class="price d-flex align-items-center gap-1 fw-light text-secondary">
+                                        <img src="images/icons/motorbike.svg" alt="">
+                                        0.95 KWD
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="card border-0 store-item">
+                            <a href="#" class="card-img-wrapper rounded-3">
+                                <img src="images/featured-stores/4.jpg" alt="" class="card-img rounded-3">
+                            </a>
+                            <div class="card-body">
+                                <span class="status text-white open px-2">
+                                    Open Now
+                                </span>
+                                <button class="favourite-btn">
+                                    <img src="images/icons/heart.svg" alt="">
+                                </button>
+                                <div class="d-flex align-items-center gap-2 ">
+                                    <a href="#" class="card-title">
+                                        The Melt
+                                    </a>
+                                    <span class="rate d-flex align-items-center gap-1">
+                                        <img src="images/icons/rate.svg" alt="">
+                                        4.5
+                                    </span>
+                                </div>
+                                <span class="card-text  fw-light text-secondary d-block">
+                                    Melts, Sandwiches
+                                </span>
+                                <div class="d-flex align-items-center gap-1">
+                                    <span class="time d-flex align-items-center gap-1 fw-light text-secondary">
+                                        <img src="images/icons/clock.svg" alt="">
+                                        Withthin 20 Min •
+                                    </span>
+                                    <span class="price d-flex align-items-center gap-1 fw-light text-secondary">
+                                        <img src="images/icons/motorbike.svg" alt="">
+                                        0.95 KWD
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="card border-0 store-item">
+                            <a href="#" class="card-img-wrapper rounded-3">
+                                <img src="images/featured-stores/1.jpg" alt="" class="card-img rounded-3">
+                            </a>
+                            <div class="card-body">
+                                <span class="status text-white open px-2">
+                                    Open Now
+                                </span>
+                                <button class="favourite-btn active">
+                                    <img src="images/icons/heart.svg" alt="">
+                                </button>
+                                <div class="d-flex align-items-center gap-2 ">
+                                    <a href="#" class="card-title">
+                                        L&L Hawaiian Barbecue
+                                    </a>
+                                    <span class="rate d-flex align-items-center gap-1">
+                                        <img src="images/icons/rate.svg" alt="">
+                                        4.7
+                                    </span>
+                                </div>
+                                <span class="card-text fw-light text-secondary d-block">
+                                    Hawaiian, Burgers
+                                </span>
+                                <div class="d-flex align-items-center gap-1">
+                                    <span class="time d-flex align-items-center gap-1 fw-light text-secondary">
+                                        <img src="images/icons/clock.svg" alt="">
+                                        Withthin 33 Min •
+                                    </span>
+                                    <span class="price d-flex align-items-center gap-1 fw-light text-secondary">
+                                        <img src="images/icons/motorbike.svg" alt="">
+                                        0.95 KWD
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="card border-0 store-item">
+                            <a href="#" class="card-img-wrapper rounded-3">
+                                <img src="images/featured-stores/2.jpg" alt="" class="card-img rounded-3">
+                            </a>
+                            <div class="card-body">
+                                <span class="status text-white closed px-2">
+                                    closes now
+                                </span>
+                                <button class="favourite-btn">
+                                    <img src="images/icons/heart.svg" alt="">
+                                </button>
+                                <div class="d-flex align-items-center gap-2 ">
+                                    <a href="#" class="card-title">
+                                        Shake Shack
+                                    </a>
+                                    <span class="rate d-flex align-items-center gap-1">
+                                        <img src="images/icons/rate.svg" alt="">
+                                        4.5
+                                    </span>
+                                </div>
+                                <span class="card-text  fw-light text-secondary d-block">
+                                    Chicken Tenders, Fries,Salads
+                                </span>
+                                <div class="d-flex align-items-center gap-1">
+                                    <span class="time d-flex align-items-center gap-1 fw-light text-secondary">
+                                        <img src="images/icons/clock.svg" alt="">
+                                        Withthin 24 Min •
+                                    </span>
+                                    <span class="price d-flex align-items-center gap-1 fw-light text-secondary">
+                                        <img src="images/icons/motorbike.svg" alt="">
+                                        0.95 KWD
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Pizza Stores -->
+
+
+
+    <!-- Start Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <ul class="main-links">
+                    <li><a href="#" class="link">About us</a></li>
+                    <li><a href="#" class="link">FAQ</a></li>
+                    <li><a href="#" class="link">Privacy Policy</a></li>
+                    <li><a href="#" class="link">Terms and Conditions</a></li>
+                    <li><a href="#" class="link">Contact Us</a></li>
+                    <li><a href="#" class="link footer-lang">
+                            العربية
+                            <img src="images/lang-ar.png" alt="">
+                        </a></li>
+                </ul>
+                <div class="footer-items">
+                    <div class="row gy-md-4 gy-4">
+                        <div class="col-12 col-lg-3 col-md-6">
+                            <div class="footer-item">
+                                <img src="images/footer-logo.png" alt="" class="footer-log">
+                                <div class="playstores">
+                                    <a href="#">
+                                        <img src="images/playstores/google.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/playstores/apple.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/playstores/huawei.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-6">
+                            <div class="footer-item">
+                                <h3 class="footer-item-title">
+                                    Restaurants
+                                </h3>
+                                <ul class="footer-links-list">
+                                    <li><a href="#" class="footer-link">Taboon</a></li>
+                                    <li><a href="#" class="footer-link">Planet Africa</a></li>
+                                    <li><a href="#" class="footer-link">Lan Yuan - Maadi</a></li>
+                                    <li><a href="#" class="footer-link">Hadrmout</a></li>
+                                    <li><a href="#" class="footer-link">Wild House By Crazy Food</a></li>
+                                    <li><a href="#" class="footer-link more">More Restaurants...</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-6">
+                            <div class="footer-item">
+                                <h3 class="footer-item-title">
+                                    Popular Cuisines
+                                </h3>
+                                <ul class="footer-links-list">
+                                    <li><a href="#" class="footer-link">Italian</a></li>
+                                    <li><a href="#" class="footer-link">Mexican</a></li>
+                                    <li><a href="#" class="footer-link">Sandwiches</a></li>
+                                    <li><a href="#" class="footer-link">Japanese</a></li>
+                                    <li><a href="#" class="footer-link">Pizza</a></li>
+                                    <li><a href="#" class="footer-link more">More Cuisines...</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-6">
+                            <div class="footer-item">
+                                <h3 class="footer-item-title">
+                                    Popular Areas
+                                </h3>
+                                <ul class="footer-links-list">
+                                    <li><a href="#" class="footer-link">Adailiya</a></li>
+                                    <li><a href="#" class="footer-link">Abdulla Al-Salem</a></li>
+                                    <li><a href="#" class="footer-link">Bnaid Al-Qar</a></li>
+                                    <li><a href="#" class="footer-link">Doha</a></li>
+                                    <li><a href="#" class="footer-link">Yarmouk</a></li>
+                                    <li><a href="#" class="footer-link more">More Areas...</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p class="text">
+                        © 2023 Eatme All right reserved
+                    </p>
+                    <div class="social">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook icon"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-x-twitter icon"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram icon"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin-in icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+
+
+    <script src="lib/jquery/jquery-3.7.0.min.js"></script>
+    <script src="lib/swiperjs/js/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nouislider@15.7.0/dist/nouislider.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

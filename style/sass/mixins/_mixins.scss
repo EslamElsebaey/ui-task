@@ -1,0 +1,89 @@
+// Language Mixins
+@mixin en {
+  html[dir="ltr"] & {
+    @content;
+  }
+}
+@mixin ar {
+  html[dir="rtl"] & {
+    @content;
+  }
+}
+
+// Placeholders
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+%transition-2 {
+  transition: all linear 0.2s;
+}
+%transition-3 {
+  transition: all linear 0.3s;
+}
+
+// Media query Mixins
+@mixin max-400 {
+  @media only screen and (max-width: 399px) {
+    @content;
+  }
+}
+
+@mixin max-576 {
+  @media only screen and (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin max-768 {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin max-992 {
+  @media only screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin max-1200 {
+  @media only screen and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin max-1400 {
+  @media only screen and (max-width: 1399px) {
+    @content;
+  }
+}
+
+@mixin min-576 {
+  @media only screen and (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin min-768 {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin min-992 {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+@mixin min-1200 {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin min-1400 {
+  @media only screen and (min-width: 1400px) {
+    @content;
+  }
+}

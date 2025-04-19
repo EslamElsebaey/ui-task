@@ -1,0 +1,91 @@
+$main-color: #02c9c0;
+$text-color: #0e1114;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+body {
+  font-family: "Montserrat-Arabic";
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  @include max-768 {
+    overflow-x: hidden;
+  }
+  &.overflowHidden {
+    overflow: hidden;
+  }
+
+  &.home-body,
+  &.index-body {
+    padding-top: 315.2px;
+    @include max-992 {
+      padding-top: 377.2px;
+    }
+  }
+  &.home-body {
+    @include max-768 {
+      padding-top: 213.2px;
+    }
+  }
+  &.index-body {
+    @include max-768 {
+      padding-top: 267.2px;
+    }
+  }
+  &.cats-body {
+    padding-top: 403.2px;
+    @include max-992 {
+      padding-top: 465.2px;
+    }
+    @include max-768 {
+      padding-top: 268.2px;
+    }
+  }
+
+  // // padding-top: 176.98px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a,
+button {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0;
+  &:hover {
+    text-decoration: none;
+    color: black;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

@@ -1,0 +1,127 @@
+.store-item {
+  gap: 12px;
+  .card-img-wrapper {
+    overflow: hidden;
+    &:hover {
+      .card-img {
+        transform: scale(1.08);
+      }
+    }
+    .card-img {
+      height: 172px;
+      object-fit: cover;
+      @extend %transition-2;
+      @include max-768 {
+        height: 143px;
+      }
+    }
+  }
+  .card-body {
+    padding: 0;
+    .card-title {
+      color: $text-color;
+      font-weight: 700;
+      font-size: 16px;
+      margin-bottom: 5px;
+      @extend %transition-2;
+      &:hover {
+        color: $main-color;
+      }
+      @include max-768 {
+        font-size: 14px;
+        margin-bottom: 0;
+      }
+    }
+    .rate {
+      font-size: 14px;
+      font-weight: 500;
+      color: #191919;
+      @include max-768 {
+        font-size: 12px;
+      }
+      img {
+        width: 12px;
+      }
+    }
+    .card-text {
+      margin-bottom: 5px;
+    }
+    .time,
+    .price,
+    .card-text {
+      font-size: 14px;
+      @include max-768 {
+        font-size: 12px;
+      }
+    }
+    .time,
+    .price {
+      img {
+        width: 17px;
+        @include max-768 {
+          width: 14px;
+        }
+      }
+    }
+  }
+  .status {
+    min-width: 80px;
+    height: 25px;
+    border-radius: 100px;
+    background-color: $main-color;
+    text-transform: capitalize;
+    @extend %flex-center;
+    position: absolute;
+    top: 14px;
+    inset-inline-start: 10px;
+    z-index: 2;
+    font-size: 12px;
+    &.open {
+      background-color: $main-color;
+    }
+    &.closed {
+      background-color: #f04438;
+    }
+    &.notAvailable {
+      background-color: #ff8a59;
+    }
+    @include max-768 {
+      min-width: 67px;
+      height: 21px;
+      font-size: 10px;
+      top: 12px;
+      inset-inline-start: 9px;
+    }
+  }
+}
+
+.favourite-btn {
+  @extend %flex-center;
+  background-color: #ffffff38;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 11px;
+  inset-inline-end: 11px;
+  z-index: 2;
+  @extend %transition-2;
+  &:hover {
+    background-color: $main-color;
+  }
+  img {
+    width: 15.67px;
+  }
+  &.active {
+    background-color: $main-color;
+  }
+  @include max-768 {
+    width: 27px;
+    height: 27px;
+    top: 10px;
+    inset-inline-end: 9px;
+    img {
+      width: 14px;
+    }
+  }
+}
