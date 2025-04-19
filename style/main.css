@@ -78,7 +78,7 @@
 }
 
 .categories, .special-offers, .filter-box .apply-btn,
-.filter-box .reset-btn {
+.filter-box .reset-btn, .header {
   transition: all linear 0.3s;
 }
 
@@ -223,6 +223,11 @@ button:focus {
 }
 .upper-wrapper.fixed {
   border-color: #e2e5e9;
+}
+@media only screen and (min-width: 768px) {
+  .upper-wrapper.fixed .header {
+    padding-block: 20px;
+  }
 }
 .upper-wrapper.fixed .categories,
 .upper-wrapper.fixed .special-offers {

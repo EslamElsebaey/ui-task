@@ -8,6 +8,11 @@
   border: 1px solid transparent;
   &.fixed {
     border-color: #e2e5e9;
+    .header {
+      @include min-768 {
+        padding-block: 20px;
+      }
+    }
     .categories,
     .special-offers {
       height: 0;
@@ -41,6 +46,7 @@
 .header {
   padding-block: 32px;
   background-color: #fff;
+  @extend %transition-3;
   @include max-768 {
     padding-block: 16px;
   }
